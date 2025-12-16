@@ -838,7 +838,7 @@ h4 {
 }
 
 .pages__content h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.2rem, 5vw, 3rem);
     margin-bottom: 40px;
     border-bottom: 2px solid var(--color-dark);
     padding-bottom: 20px;
