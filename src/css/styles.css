@@ -820,3 +820,72 @@ h4 {
     text-decoration: underline;
     font-weight: 700;
 }
+/* --- ЮРИДИЧЕСКИЕ СТРАНИЦЫ --- */
+.pages {
+    padding-top: 140px;
+    /* Отступ от хедера */
+    padding-bottom: 80px;
+}
+
+.pages__content {
+    background: var(--color-white);
+    border: 2px solid var(--color-dark);
+    padding: 40px;
+    box-shadow: 12px 12px 0px var(--color-dark);
+    /* Жесткая тень */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pages__content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 20px;
+}
+
+.pages__content h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+}
+
+.pages__content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.pages__content ul {
+    list-style: disc;
+    /* Возвращаем маркеры списка */
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.pages__content li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.pages__content a {
+    color: var(--color-accent);
+    font-weight: 700;
+    text-decoration: underline;
+    transition: background 0.2s;
+}
+
+.pages__content a:hover {
+    background: var(--color-bg);
+    color: var(--color-dark);
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 768px) {
+    .pages__content {
+        padding: 20px;
+        box-shadow: 6px 6px 0px var(--color-dark);
+    }
+}
