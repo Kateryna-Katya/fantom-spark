@@ -1,56 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fantom-spark/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/fantom-spark/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/fantom-spark/assets/styles-guStct1H.css">
-  </head>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantom-Spark | Карьерный апгрейд и инновации</title>
+
+  <meta name="description"
+    content="Инновационная платформа для карьерного роста. Решения, которые меняют правила игры.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+  <script type="module" crossorigin src="/fantom-spark/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/fantom-spark/assets/styles-D72xA8oL.css">
+</head>
+
   <body>
+    <div class="smooth-wrapper">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      Fantom-Spark<span class="header__dot">.</span>
+    </a>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">О платформе</a></li>
+        <li class="nav__item"><a href="#advantages" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="header__cta">
+      <span>Связаться</span>
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+
+    <button class="header__burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
+<div class="mobile-menu">
+  <div class="mobile-menu__container">
+    <ul class="mobile-menu__list">
+      <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+      <li><a href="#about" class="mobile-menu__link">О платформе</a></li>
+      <li><a href="#advantages" class="mobile-menu__link">Преимущества</a></li>
+      <li><a href="#innovations" class="mobile-menu__link">Инновации</a></li>
+      <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+    </ul>
+    <div class="mobile-menu__footer">
+      <span>Fantom-Spark.fit</span>
+    </div>
+  </div>
+</div>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+    <div class="container hero__container">
+        <h1 class="hero__title">
+            <span class="line">КАРЬЕРНЫЙ</span>
+            <span class="line line--indent">АПГРЕЙД</span>
+            <span class="line line--outline">РЕАЛЬНОСТИ</span>
+        </h1>
+
+        <div class="hero__content">
+            <p class="hero__desc">
+                Технология нового поколения для тех, кто готов выйти за рамки.
+                Воплотите мечты в реальность с помощью AI-инструментов.
+            </p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">
+                    Начать сейчас <i data-lucide="zap"></i>
+                </a>
+                <div class="hero__badge">
+                    <i data-lucide="globe"></i> Доступно в ЕС
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__visual">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="marquee">
+        <div class="marquee__inner">
+            <span>ИННОВАЦИОННАЯ ТЕХНОЛОГИЯ — СТРАТЕГИЯ РОСТА — ПЛАТФОРМА ГОДА — </span>
+            <span>ИННОВАЦИОННАЯ ТЕХНОЛОГИЯ — СТРАТЕГИЯ РОСТА — ПЛАТФОРМА ГОДА — </span>
+            <span>ИННОВАЦИОННАЯ ТЕХНОЛОГИЯ — СТРАТЕГИЯ РОСТА — ПЛАТФОРМА ГОДА — </span>
+        </div>
+    </div>
+
+    <div class="container about__container">
+        <h2 class="section-title">Оценить <br>перспективы</h2>
+        <div class="about__grid">
+            <div class="about__card">
+                <i data-lucide="cpu" class="about__icon"></i>
+                <h3>Технологии</h3>
+                <p>Решения, которые меняют правила игры. Мы используем AI для анализа ваших карьерных треков.</p>
+            </div>
+            <div class="about__card about__card--dark">
+                <i data-lucide="trending-up" class="about__icon"></i>
+                <h3>Рост</h3>
+                <p>Постройте карьеру, которая работает на вас. Пассивный доход знаний и навыков.</p>
+            </div>
+            <div class="about__card">
+                <i data-lucide="shield-check" class="about__icon"></i>
+                <h3>Надежность</h3>
+                <p>Проверенный партнер. Методологии, доказавшие эффективность в Германии и по всему ЕС.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="advantages" class="advantages">
+    <div class="container">
+        <h2 class="section-title">Почему мы?</h2>
+        <div class="adv__list">
+            <div class="adv__item">
+                <div class="adv__num">01</div>
+                <div class="adv__text">
+                    <h4>Быстрый старт</h4>
+                    <p>Подключение занимает 2 минуты. Легко разобраться без опыта.</p>
+                </div>
+            </div>
+            <div class="adv__item">
+                <div class="adv__num">02</div>
+                <div class="adv__text">
+                    <h4>Экспертная поддержка</h4>
+                    <p>Поддержка по всем вопросам 24/7. Мы не бросаем своих.</p>
+                </div>
+            </div>
+            <div class="adv__item">
+                <div class="adv__num">03</div>
+                <div class="adv__text">
+                    <h4>Доступ к платформе</h4>
+                    <p>Открыт для резидентов Германии. Передовая цифровая инфраструктура.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="innovations" class="innovations">
+    <div class="container">
+        <div class="innovations__header">
+            <h2 class="section-title text-white">Инновации</h2>
+            <p class="text-white">Технологии, которые работают на вас.</p>
+        </div>
+
+        <div class="innovations__wrapper">
+            <div class="inn__box">
+                <h3>AI Аналитика</h3>
+                <p>Глубокий анализ рынка труда в реальном времени.</p>
+            </div>
+            <div class="inn__box">
+                <h3>Автоматизация</h3>
+                <p>Удобная адаптация без сложностей.</p>
+            </div>
+            <div class="inn__box inn__box--large">
+                <h3>Future Ready</h3>
+                <p>Расширьте горизонты проекта с инструментами будущего.</p>
+                <a href="#contact" class="link-arrow">Узнать детали <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="blog">
+    <div class="container">
+        <h2 class="section-title">Карьерный Блог</h2>
+        <div class="blog__grid">
+            <article class="blog__post">
+                <div class="blog__img">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__date">16.12.2025</span>
+                    <h4>Как переосмыслить подход к развитию?</h4>
+                    <a href="#contact" class="blog__link">Читать</a>
+                </div>
+            </article>
+            <article class="blog__post">
+                <div class="blog__img"></div>
+                <div class="blog__content">
+                    <span class="blog__date">14.12.2025</span>
+                    <h4>5 шагов к пассивному доходу знаний</h4>
+                    <a href="#contact" class="blog__link">Читать</a>
+                </div>
+            </article>
+            <article class="blog__post">
+                <div class="blog__img"></div>
+                <div class="blog__content">
+                    <span class="blog__date">10.12.2025</span>
+                    <h4>AI для обычных людей: старт</h4>
+                    <a href="#contact" class="blog__link">Читать</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container contact__container">
+        <div class="contact__info">
+            <h2 class="section-title">Начать <br>сейчас</h2>
+            <p>Заполните форму, чтобы получить бесплатную консультацию. Пошаговый путь, понятный каждому.</p>
+
+            <ul class="contact__details">
+                <li><i data-lucide="mail"></i> hello@fantom-spark.fit</li>
+                <li><i data-lucide="phone"></i> +49 30 2244 6688</li>
+            </ul>
+        </div>
+
+        <div class="contact__form-wrapper">
+            <form id="leadForm" class="form">
+                <div class="form__group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+49..." required>
+                    <small class="error-msg" id="phoneError"></small>
+                </div>
+
+                <div class="form__group captcha-group">
+                    <label>Решите пример: <span id="captchaQuestion"></span> = ?</label>
+                    <input type="number" id="captchaAnswer" required>
+                </div>
+
+                <div class="form__checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Я согласен с <a href="./personal-data-policy.html">политикой обработки
+                            данных</a></label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">
+                    Запросить доступ
+                </button>
+
+                <div class="form-status" id="formStatus"></div>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__container container">
+    <div class="footer__col">
+      <a href="#" class="footer__logo">Fantom-Spark.fit</a>
+      <p class="footer__desc">
+        Технология нового поколения для вашего профессионального роста.
+        Переосмыслите подход к развитию уже сегодня.
+      </p>
+      <div class="footer__badge">
+        Платформа уже доступна в Европе
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Навигация</h3>
+      <ul class="footer__list">
+        <li><a href="#about" class="footer__link">О нас</a></li>
+        <li><a href="#advantages" class="footer__link">Возможности</a></li>
+        <li><a href="#blog" class="footer__link">Карьерный блог</a></li>
+        <li><a href="#contact" class="footer__link">Начать сейчас</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Юридическая информация</h3>
+      <ul class="footer__list">
+        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+        <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+        <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+        <li><a href="return.html" class="footer__link">Return Policy</a></li>
+        <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html" class="footer__link">Personal Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__contacts">
+        <li class="footer__contact-item">
+          <i data-lucide="map-pin"></i>
+          <span>Torstraße 15, 10119 Berlin, Germany</span>
+        </li>
+        <li class="footer__contact-item">
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@fantom-spark.fit">hello@fantom-spark.fit</a>
+        </li>
+        <li class="footer__contact-item">
+          <i data-lucide="phone"></i>
+          <a href="tel:+493022446688">+49 30 2244 6688</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <span>© 2025 Fantom-Spark. Все права защищены.</span>
+      <span>Designed by AI</span>
+    </div>
   </div>
 </footer>
+    <div id="cookiePopup" class="cookie-popup">
+      <div class="cookie-content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button id="acceptCookie" class="btn btn--small">Принять</button>
+      </div>
+    </div>
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
   </body>
 </html>
