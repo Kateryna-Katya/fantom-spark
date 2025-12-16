@@ -1,19 +1,42 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      Fantom-Spark<span class="header__dot">.</span>
+    </a>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">О платформе</a></li>
+        <li class="nav__item"><a href="#advantages" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="header__cta">
+      <span>Связаться</span>
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+
+    <button class="header__burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
+<div class="mobile-menu">
+  <div class="mobile-menu__container">
+    <ul class="mobile-menu__list">
+      <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+      <li><a href="#about" class="mobile-menu__link">О платформе</a></li>
+      <li><a href="#advantages" class="mobile-menu__link">Преимущества</a></li>
+      <li><a href="#innovations" class="mobile-menu__link">Инновации</a></li>
+      <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+    </ul>
+    <div class="mobile-menu__footer">
+      <span>Fantom-Spark.fit</span>
+    </div>
+  </div>
+</div>
